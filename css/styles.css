@@ -53,6 +53,7 @@ button {
 
 .link {
     text-decoration: none;
+
 }
 
 .list {
@@ -347,6 +348,7 @@ button {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    background-color: transparent;
 }
 
 .team-socialmedia-list-item:hover,
@@ -354,7 +356,8 @@ button {
     background-color: var(--accent-color);
 }
 
-.team-socialmedia-list-item:hover .team-socialmedia-icon {
+.team-socialmedia-list-item:hover .team-socialmedia-icon,
+.team-socialmedia-list-item:focus .team-socialmedia-icon {
     fill: var(--white);
 }
 
@@ -396,11 +399,13 @@ button {
     fill: var(--bgc);
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-item:hover .clients-item-logo {
+.clients-item:hover .clients-item-logo,
+.clients-item:focus .clients-item-logo {
     fill: var(--accent-color);
 }
 
@@ -472,16 +477,6 @@ button {
     color: var(--white);
 }
 
-/* .team-socialmedia-list-footer {
-    display: flex;
-    column-gap: 10px;
-    width: 206px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    ;
-} */
 
 /* !!!------------------portfolio------------------!!! */
 .projects {
@@ -493,6 +488,11 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.projects-item:hover,
+.projects-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-filter {
