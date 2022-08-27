@@ -560,6 +560,7 @@ button {
     color: var(--accent-color);
 }
 
+
 .button-filter:hover,
 .button-filter:focus {
     color: var(--white);
