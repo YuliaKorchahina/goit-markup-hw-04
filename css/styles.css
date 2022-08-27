@@ -175,7 +175,6 @@ button {
 }
 
 .hero {
-    /* background-color: var(--background-color-dark); */
     background-color: #C4C4C4;
     text-align: center;
     padding: 200px 0;
@@ -349,6 +348,7 @@ button {
     height: 44px;
     border-radius: 50%;
     background-color: transparent;
+    margin-bottom: 30px;
 }
 
 .team-socialmedia-list-item:hover,
@@ -359,10 +359,6 @@ button {
 .team-socialmedia-list-item:hover .team-socialmedia-icon,
 .team-socialmedia-list-item:focus .team-socialmedia-icon {
     fill: var(--white);
-}
-
-.team-socialmedia-list-item {
-    margin-bottom: 30px;
 }
 
 /* clients */
@@ -478,7 +474,9 @@ button {
 }
 
 .team-socialmedia-list-item.fotter {
+    margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 .team-socialmedia-list-item.fotter:hover,
