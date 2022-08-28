@@ -176,11 +176,13 @@ button {
     background-color: #C4C4C4;
     text-align: center;
     padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-position: center;
-    background-size: 1600px;
     background-size: cover;
+    max-width: 1600px;
 }
 
 /* !!!------------------hero-button!!!------------------ */
@@ -296,7 +298,7 @@ button {
 }
 
 .team-position {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     text-align: center;
     font-weight: 400;
@@ -329,6 +331,7 @@ button {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
+    margin-bottom: 30px;
 }
 
 .team-socialmedia-list-item {
@@ -339,7 +342,6 @@ button {
     height: 44px;
     border-radius: 50%;
     background-color: transparent;
-    margin-bottom: 30px;
 }
 
 .team-socialmedia-list-item:hover,
@@ -381,8 +383,6 @@ button {
 }
 
 .clients-item-logo {
-    width: 106px;
-    height: 60px;
     fill: var(--bgc);
 }
 
@@ -406,6 +406,7 @@ button {
 .footer>.container {
     display: flex;
     column-gap: 70px;
+    align-items: baseline;
 }
 
 .logo-fotter {
@@ -465,14 +466,21 @@ button {
 }
 
 .team-socialmedia-list-item.fotter {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     background-color: rgba(255, 255, 255, 0.1);
+}
 
+.footer-socialmedia-icon {
+    fill: var(--white);
 }
 
 .team-socialmedia-list-item.fotter:hover,
 .team-socialmedia-list-item.fotter:focus {
     background-color: var(--accent-color);
+}
+
+.right>.team-socialmedia-list {
+    margin-bottom: 0;
 }
 
 /* !!!------------------portfolio------------------!!! */
@@ -487,8 +495,12 @@ button {
     gap: 30px;
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link {
+    display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
