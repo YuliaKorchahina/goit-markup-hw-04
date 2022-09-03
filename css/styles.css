@@ -640,9 +640,7 @@ button, a {
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--background-secondary-color);
-
-    transition: color var(--transition-time) var(--transition-timing-function),
-        background-color var(--transition-time) var(--transition-timing-function);
+    transition: color var(--transition-time) var(--transition-timing-function), background-color var(--transition-time) var(--transition-timing-function);
 }
 
 .button-filter:hover,
@@ -689,8 +687,7 @@ button, a {
     height: 100%;
     z-index: 100;
     background: rgba(0, 0, 0, 0.2);
-    transition: opacity 400ms ease-in,
-        visibility 400ms ease-in;
+    transition: opacity 400ms ease-in, visibility 400ms ease-in;
 }
 
 .modal {
@@ -719,6 +716,7 @@ button, a {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
 }
+
 
 .is-hidden {
     opacity: 0;
